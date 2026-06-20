@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_Reference/Shells.md",
+                "file": "_Glossary/DNS-Glossary.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Shells"
+              "title": "DNS-Glossary"
             }
           }
         ]
@@ -196,16 +196,26 @@
   },
   "active": "f803da6e1562bd5f",
   "lastOpenFiles": [
+    "_Tools/OpenVAS.md",
+    "04-Shells-Payloads/Bind-Shells.md",
+    "04-Shells-Payloads/Web-Shells.md",
+    "04-Shells-Payloads/Shells-Overview.md",
+    "04-Shells-Payloads/Web-Shells.md.tmp.14852.9df11f2233a3",
+    "04-Shells-Payloads/Web-Shells.md.tmp.14852.b178b9d75abe",
+    "04-Shells-Payloads/Web-Shells.md.tmp.14852.5dc25bd4538b",
+    "_Tools/Antak.md",
+    "_Tools/Laudanum.md",
+    "_Tools/Antak.md.tmp.14852.1a5a1a36d9d4",
+    "_Reference/Shells.md",
+    "_Tools/Laudanum.md.tmp.14852.84b3b1c7bb8c",
     "_Reference/Ports.md",
     "_Glossary/Networking.md",
     "_Glossary/DNS-Glossary.md",
-    "_Reference/Shells.md",
     "00-Methedology/Web-Recon.md",
     "01-Recon/Web/Google-Dorking.md",
     "_Reference/Google-Dorks.md",
     "07-Post-Exploitation/Linux-Privilege-Escalation.md",
     "03-File-Transfers/Linux-File-Transfers.md",
-    "04-Shells-Payloads/Bind-Shells.md",
     "04-Shells-Payloads/Bind-Shells.md.tmp.3572.1775720977319",
     "10-Reporting",
     "09-Passwords/Hash-Cracking.md",
@@ -214,12 +224,6 @@
     "07-Post-Exploitation/Windows-Privilege-Escalation.md",
     "07-Post-Exploitation/Credential-Hunting.md",
     "07-Post-Exploitation",
-    "06-Web-Attacks",
-    "05-Exploitation",
-    "04-Shells-Payloads/Shells-Overview.md",
-    "04-Shells-Payloads/Shells-Overview.md.tmp.22520.1775712151614",
-    "04-Shells-Payloads",
-    "03-File-Transfers/Detection-Evasion.md.tmp.22520.1775711530123",
     "03-File-Transfers/Detection-Evasion.md",
     "03-File-Transfers/LOLBins-File-Transfers.md",
     "03-File-Transfers/Protected-File-Transfers.md",
@@ -228,10 +232,6 @@
     "01-Recon/Infrastructure/SMB-Enumeration.md",
     "02-Vuln-Assessment/VA-Overview.md",
     "02-Vuln-Assessment/VA-Reporting.md",
-    "_Tools/OpenVAS.md",
-    "_Tools/Nessus.md",
-    "_Glossary/CVSS.md",
-    "_Glossary/Standards.md",
     "Screenshots/Pasted image 20260317164220.png",
     "Screenshots/Screenshot 2026-03-04 150707.png",
     "Screenshots/Pasted image 20260317164112.png",

@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01-Recon/Infrastructure/Netcat.md",
+                "file": "_Tools/Nmap.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Netcat"
+              "title": "Nmap"
             }
           }
         ]
@@ -196,8 +196,11 @@
   },
   "active": "f803da6e1562bd5f",
   "lastOpenFiles": [
-    "01-Recon/Infrastructure/NetCat.md",
+    "docs/ensureFile.md",
+    "docs",
+    "_Tools/Nmap.md",
     "01-Recon/Infrastructure/Netcat.md",
+    "01-Recon/Infrastructure/NetCat.md",
     "01-Recon/Infrastructure/Linux-Remote-Management.md",
     "01-Recon/Infrastructure/DNS-Enumeration.md",
     "_Glossary/CVSS.md",
@@ -211,7 +214,6 @@
     "app/release/mac-arm64/Pentest Vault.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/zh_CN_MASCULINE.lproj/locale.pak",
     "app/release/mac-arm64/Pentest Vault.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/zh_CN_FEMININE.lproj/locale.pak",
     "app/release/mac-arm64/Pentest Vault.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/zh_CN.lproj/locale.pak",
-    "app/release/mac-arm64/Pentest Vault.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/vi_FEMININE.lproj/locale.pak",
     "app/node_modules/tsx/node_modules/@esbuild/darwin-arm64/README.md",
     "app/node_modules/tsx/node_modules/esbuild/LICENSE.md",
     "app/node_modules/tsx/node_modules/esbuild/README.md",
@@ -231,8 +233,6 @@
     "app/node_modules/typescript/README.md",
     "app/node_modules/electron-winstaller/README.md",
     "app/node_modules/electron-winstaller/resources/install-spinner.gif",
-    "app/node_modules/caniuse-lite/README.md",
-    "app/node_modules/lodash/README.md",
     "app/node_modules/highlight.js/styles/pojoaque.jpg",
     "app/node_modules/highlight.js/styles/brown-papersq.png",
     "app/node_modules/app-builder-lib/templates/icons/proton-native/linux/64x64.png",

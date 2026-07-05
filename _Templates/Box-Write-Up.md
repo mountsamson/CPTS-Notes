@@ -1,4 +1,4 @@
-﻿
+
 # Box Name
 
 ## Box Info

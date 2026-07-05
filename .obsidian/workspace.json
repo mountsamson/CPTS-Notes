@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01-Recon/Infrastructure/NFS-Enumeration.md",
+                "file": "01-Recon/Infrastructure/Netcat.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "NFS-Enumeration"
+              "title": "Netcat"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "rpc",
+                "query": "SSH",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,8 +74,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -172,8 +171,8 @@
             "state": {
               "type": "git-view",
               "state": {},
-              "icon": "lucide-ghost",
-              "title": "git-view"
+              "icon": "git-pull-request",
+              "title": "Source Control"
             }
           }
         ],
@@ -191,50 +190,62 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "bases:Create new base": false
+      "bases:Create new base": false,
+      "obsidian-git:Open Git source control": false
     }
   },
   "active": "f803da6e1562bd5f",
   "lastOpenFiles": [
-    "01-Recon/Infrastructure/SMTP-Enumeration.md",
-    "_Reference/Ports.md",
+    "01-Recon/Infrastructure/NetCat.md",
+    "01-Recon/Infrastructure/Netcat.md",
     "01-Recon/Infrastructure/Linux-Remote-Management.md",
-    "01-Recon/Infrastructure/SNMP-Enumeration.md",
-    "01-Recon/Infrastructure/Windows-Remote-Management.md",
     "01-Recon/Infrastructure/DNS-Enumeration.md",
-    "01-Recon/Enumeration-Methodology.md",
-    "01-Recon/Infrastructure/IMAP-POP3-Enumeration.md",
-    "_Glossary/DNS-Glossary.md",
-    "_Tools/OpenVAS.md",
-    "04-Shells-Payloads/Bind-Shells.md",
-    "04-Shells-Payloads/Web-Shells.md",
-    "04-Shells-Payloads/Shells-Overview.md",
-    "04-Shells-Payloads/Web-Shells.md.tmp.14852.9df11f2233a3",
-    "04-Shells-Payloads/Web-Shells.md.tmp.14852.b178b9d75abe",
-    "04-Shells-Payloads/Web-Shells.md.tmp.14852.5dc25bd4538b",
-    "_Tools/Antak.md",
-    "_Tools/Laudanum.md",
-    "_Tools/Antak.md.tmp.14852.1a5a1a36d9d4",
-    "_Reference/Shells.md",
-    "_Tools/Laudanum.md.tmp.14852.84b3b1c7bb8c",
-    "_Glossary/Networking.md",
-    "00-Methedology/Web-Recon.md",
-    "01-Recon/Web/Google-Dorking.md",
-    "_Reference/Google-Dorks.md",
-    "07-Post-Exploitation/Linux-Privilege-Escalation.md",
-    "03-File-Transfers/Linux-File-Transfers.md",
-    "04-Shells-Payloads/Bind-Shells.md.tmp.3572.1775720977319",
-    "10-Reporting",
-    "09-Passwords/Hash-Cracking.md",
-    "09-Passwords",
-    "08-AD",
-    "07-Post-Exploitation/Windows-Privilege-Escalation.md",
-    "07-Post-Exploitation/Credential-Hunting.md",
-    "07-Post-Exploitation",
-    "03-File-Transfers/Detection-Evasion.md",
-    "Screenshots/Pasted image 20260317164220.png",
-    "Screenshots/Screenshot 2026-03-04 150707.png",
-    "Screenshots/Pasted image 20260317164112.png",
-    "Screenshots/Screenshot 2026-03-03 200856.png"
+    "_Glossary/CVSS.md",
+    "app/README.md",
+    "app/release/builder-debug.yml",
+    "app/release/mac-arm64/Pentest Vault.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/zh_TW_NEUTER.lproj/locale.pak",
+    "app/release/mac-arm64/Pentest Vault.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/zh_TW_MASCULINE.lproj/locale.pak",
+    "app/release/mac-arm64/Pentest Vault.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/zh_TW_FEMININE.lproj/locale.pak",
+    "app/release/mac-arm64/Pentest Vault.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/zh_TW.lproj/locale.pak",
+    "app/release/mac-arm64/Pentest Vault.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/zh_CN_NEUTER.lproj/locale.pak",
+    "app/release/mac-arm64/Pentest Vault.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/zh_CN_MASCULINE.lproj/locale.pak",
+    "app/release/mac-arm64/Pentest Vault.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/zh_CN_FEMININE.lproj/locale.pak",
+    "app/release/mac-arm64/Pentest Vault.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/zh_CN.lproj/locale.pak",
+    "app/release/mac-arm64/Pentest Vault.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/vi_FEMININE.lproj/locale.pak",
+    "app/node_modules/tsx/node_modules/@esbuild/darwin-arm64/README.md",
+    "app/node_modules/tsx/node_modules/esbuild/LICENSE.md",
+    "app/node_modules/tsx/node_modules/esbuild/README.md",
+    "app/node_modules/tsx/README.md",
+    "app/node_modules/@types/d3-geo/README.md",
+    "app/node_modules/@types/topojson-client/README.md",
+    "app/node_modules/@types/topojson-specification/README.md",
+    "app/node_modules/@types/geojson/README.md",
+    "app/node_modules/fsevents/README.md",
+    "app/node_modules/highlight.js/VERSION_11_UPGRADE.md",
+    "app/node_modules/highlight.js/VERSION_10_UPGRADE.md",
+    "app/node_modules/highlight.js/SUPPORTED_LANGUAGES.md",
+    "app/node_modules/highlight.js/SECURITY.md",
+    "app/node_modules/highlight.js/README.md",
+    "app/node_modules/highlight.js/CHANGES.md",
+    "app/node_modules/typescript/SECURITY.md",
+    "app/node_modules/typescript/README.md",
+    "app/node_modules/electron-winstaller/README.md",
+    "app/node_modules/electron-winstaller/resources/install-spinner.gif",
+    "app/node_modules/caniuse-lite/README.md",
+    "app/node_modules/lodash/README.md",
+    "app/node_modules/highlight.js/styles/pojoaque.jpg",
+    "app/node_modules/highlight.js/styles/brown-papersq.png",
+    "app/node_modules/app-builder-lib/templates/icons/proton-native/linux/64x64.png",
+    "app/node_modules/app-builder-lib/templates/icons/proton-native/linux/512x512.png",
+    "app/node_modules/app-builder-lib/templates/icons/proton-native/linux/48x48.png",
+    "app/node_modules/app-builder-lib/templates/icons/proton-native/linux/32x32.png",
+    "app/node_modules/app-builder-lib/templates/icons/proton-native/linux/1024x1024.png",
+    "app/node_modules/app-builder-lib/templates/icons/proton-native/linux/256x256.png",
+    "app/node_modules/app-builder-lib/templates/icons/proton-native/linux/16x16.png",
+    "Untitled 1.canvas",
+    "Untitled.canvas",
+    "Untitled 4.canvas",
+    "Untitled 3.canvas",
+    "Untitled 2.canvas"
   ]
 }

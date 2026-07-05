@@ -19,7 +19,7 @@ nmap -sC -sV -oA nmap/initial <IP>
 ```
 
 **Results:**
-- Port 22: OpenSSH 9.6p1
+- Port 22: OpenESSH 9.6p1
 - Port 80: HTTP Apache httpd 2.4.58
 
 

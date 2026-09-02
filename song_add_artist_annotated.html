@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Song::add_artist — annotated</title>
+<style>
+  :root{
+    --bg:#f7f7f5; --panel:#ffffff; --ink:#1f2328; --sub:#5b6168;
+    --border:#e3e2de; --code-bg:#fbfaf8; --shadow: 0 1px 2px rgba(0,0,0,.04);
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --bg:#191a1c; --panel:#212224; --ink:#eceae6; --sub:#9a9d a1; --sub:#a3a7ab; --border:#33353a; --code-bg:#1b1c1e; --shadow:none; }
+  }
+  *{ box-sizing:border-box; }
+  body{ margin:0; background:var(--bg); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif; }
+  .wrap{ max-width:900px; margin:0 auto; padding:36px 22px 60px; }
+  h1{ font-size:1.15rem; font-weight:650; margin:0 0 4px; }
+  .lede{ color:var(--sub); font-size:.92rem; margin:0 0 26px; line-height:1.5; }
+  .stage{ position:relative; background:var(--panel); border:1px solid var(--border); border-radius:14px; padding:26px 22px 8px; box-shadow:var(--shadow); }
+  svg.connectors{ position:absolute; inset:0; width:100%; height:100%; pointer-events:none; overflow:visible; }
+  svg.connectors path{ fill:none; stroke-width:1.6; opacity:.55; transition:opacity .15s ease, stroke-width .15s ease; }
+  svg.connectors path.active{ opacity:1; stroke-width:2.4; }
+  svg.connectors path.dim{ opacity:.12; }
+
+  .code{
+    font-family:ui-monospace,SFMono-Regular,"SF Mono",Menlo,Consolas,monospace;
+    font-size:1.12rem; line-height:2.4; background:var(--code-bg);
+    border:1px solid var(--border); border-radius:10px; padding:16px 18px;
+    position:relative; z-index:2; white-space:pre;
+  }
+  .code .line2{ padding-left:1.6em; }
+  .tok{ border-radius:5px; padding:1px 3px; cursor:default; transition:opacity .15s ease, box-shadow .15s ease; color:var(--tokc); }
+  .tok.punct{ color:var(--sub); }
+  .tok.dim{ opacity:.3; }
+  .tok.active{ box-shadow:0 0 0 2px var(--tokc) inset; background:color-mix(in srgb, var(--tokc) 16%, transparent); }
+
+  .cards{ position:relative; z-index:2; display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:12px; margin-top:34px; padding-bottom:22px; }
+  .card{ border:1px solid var(--border); border-radius:10px; padding:12px 13px; background:var(--code-bg); transition:opacity .15s ease, box-shadow .15s ease; }
+  .card.dim{ opacity:.3; }
+  .card.active{ box-shadow:0 0 0 2px var(--tokc) inset; }
+  .card .head{ display:flex; align-items:center; gap:8px; margin-bottom:5px; }
+  .card .dot{ width:10px; height:10px; border-radius:3px; background:var(--tokc); flex:none; }
+  .card .name{ font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; font-size:.86rem; font-weight:650; }
+  .card p{ margin:0; font-size:.84rem; line-height:1.48; color:var(--sub); }
+
+  .note{ max-width:900px; margin:22px auto 0; font-size:.82rem; color:var(--sub); line-height:1.55; }
+  .hint{ text-align:center; font-size:.78rem; color:var(--sub); margin-top:6px; }
+  code.inline{ font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; background:var(--code-bg); border:1px solid var(--border); border-radius:4px; padding:0 4px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Song::add_artist — line by line</h1>
+  <p class="lede">Hover any word in the code, or any card below, to trace the connection. This is a member-function <em>definition</em> written outside the class body — it fills in a method that was already declared inside <code class="inline">class Song { ... };</code>.</p>
+
+  <div class="stage" id="stage">
+    <svg class="connectors" id="svg"></svg>
+
+    <div class="code" id="code">
+<span class="line1"><span class="tok" data-id="void" style="--tokc:#3b82f6">void</span> <span class="tok" data-id="scope" style="--tokc:#8b5cf6">Song::</span><span class="tok" data-id="name" style="--tokc:#ec4899">add_artist</span><span class="tok punct" data-id="parenopen">(</span><span class="tok" data-id="paramtype" style="--tokc:#0ea5a4">std::string</span> <span class="tok" data-id="paramname" style="--tokc:#f59e0b">new_artist</span><span class="tok punct" data-id="parenclose">)</span> <span class="tok" data-id="brace1" style="--tokc:#64748b">{</span></span>
+<span class="line2"><span class="tok" data-id="member" style="--tokc:#14b8a6">artist</span> <span class="tok" data-id="eq" style="--tokc:#6b7280">=</span> <span class="tok" data-id="value" style="--tokc:#f59e0b">new_artist</span><span class="tok punct" data-id="semi">;</span></span>
+<span class="line3"><span class="tok" data-id="brace2" style="--tokc:#64748b">}</span></span>
+    </div>
+
+    <div class="cards" id="cards">
+      <div class="card" data-id="void" style="--tokc:#3b82f6">
+        <div class="head"><span class="dot"></span><span class="name">void</span></div>
+        <p>Return type. This function doesn't hand anything back to the caller — it just does a job (updates state) and returns.</p>
+      </div>
+      <div class="card" data-id="scope" style="--tokc:#8b5cf6">
+        <div class="head"><span class="dot"></span><span class="name">Song::</span></div>
+        <p>Scope-resolution operator. Says "the function that follows belongs to class <code class="inline">Song</code>" — this is how you define a member function outside the class declaration, usually in a .cpp file.</p>
+      </div>
+      <div class="card" data-id="name" style="--tokc:#ec4899">
+        <div class="head"><span class="dot"></span><span class="name">add_artist</span></div>
+        <p>The method's name, matching a declaration inside the <code class="inline">Song</code> class (e.g. <code class="inline">void add_artist(std::string);</code>).</p>
+      </div>
+      <div class="card" data-id="paramtype" style="--tokc:#0ea5a4">
+        <div class="head"><span class="dot"></span><span class="name">std::string</span></div>
+        <p>Parameter type. The caller must pass a string. Note it's taken <strong>by value</strong> — a full copy of the caller's string is made, which is a bit wasteful; <code class="inline">const std::string&amp;</code> would avoid the copy.</p>
+      </div>
+      <div class="card" data-id="paramname" style="--tokc:#f59e0b">
+        <div class="head"><span class="dot"></span><span class="name">new_artist</span></div>
+        <p>Parameter name — a local variable that holds whatever string the caller passed in, e.g. <code class="inline">song.add_artist("Adele")</code>.</p>
+      </div>
+      <div class="card" data-id="brace1" style="--tokc:#64748b">
+        <div class="head"><span class="dot"></span><span class="name">{ &nbsp;…&nbsp; }</span></div>
+        <p>Opens and closes the function body — everything the function actually does lives between this pair.</p>
+      </div>
+      <div class="card" data-id="member" style="--tokc:#14b8a6">
+        <div class="head"><span class="dot"></span><span class="name">artist</span></div>
+        <p>A member variable of <code class="inline">Song</code> (declared in the class, e.g. <code class="inline">std::string artist;</code>). Because it isn't declared locally, this refers to the object's own field.</p>
+      </div>
+      <div class="card" data-id="eq" style="--tokc:#6b7280">
+        <div class="head"><span class="dot"></span><span class="name">=</span></div>
+        <p>Assignment operator — copies the value on the right into the variable on the left. (Not equality comparison, which would be <code class="inline">==</code>.)</p>
+      </div>
+      <div class="card" data-id="value" style="--tokc:#f59e0b">
+        <div class="head"><span class="dot"></span><span class="name">new_artist</span></div>
+        <p>Same parameter from the signature, now used. Same color on purpose: this is the value flowing from "what came in" to "what gets stored."</p>
+      </div>
+      <div class="card" data-id="brace2" style="--tokc:#64748b">
+        <div class="head"><span class="dot"></span><span class="name">}</span></div>
+        <p>End of the function. There's no <code class="inline">return</code> statement because the return type is <code class="inline">void</code>.</p>
+      </div>
+    </div>
+  </div>
+  <p class="hint">Hover a word above, or a card below, to see the match.</p>
+
+  <p class="note"><strong>In one sentence:</strong> this function takes a string argument and overwrites the <code class="inline">Song</code> object's <code class="inline">artist</code> field with it — a simple setter, with no validation and one avoidable copy (passing by <code class="inline">const&amp;</code> would be slightly more efficient for a real codebase).</p>
+</div>
+
+<script>
+(function(){
+  var stage = document.getElementById('stage');
+  var svg = document.getElementById('svg');
+  var toks = Array.prototype.slice.call(document.querySelectorAll('.tok[data-id]'));
+  var cards = Array.prototype.slice.call(document.querySelectorAll('.card[data-id]'));
+
+  function rel(el){
+    var r = el.getBoundingClientRect();
+    var s = stage.getBoundingClientRect();
+    return { x: r.left - s.left, y: r.top - s.top, w: r.width, h: r.height };
+  }
+
+  function draw(){
+    svg.innerHTML = '';
+    toks.forEach(function(tok){
+      var id = tok.getAttribute('data-id');
+      var card = document.querySelector('.card[data-id="'+id+'"]');
+      if(!card) return;
+      var a = rel(tok), b = rel(card);
+      var x1 = a.x + a.w/2, y1 = a.y + a.h;
+      var x2 = b.x + b.w/2, y2 = b.y;
+      var midY = y1 + (y2 - y1) * 0.55;
+      var color = getComputedStyle(tok).getPropertyValue('--tokc') || '#888';
+      var path = document.createElementNS('http://www.w3.org/2000/svg','path');
+      path.setAttribute('d', 'M '+x1+' '+y1+' C '+x1+' '+midY+', '+x2+' '+midY+', '+x2+' '+y2);
+      path.setAttribute('stroke', color.trim());
+      path.setAttribute('data-id', id);
+      svg.appendChild(path);
+    });
+  }
+
+  function setActive(id){
+    toks.forEach(function(t){
+      var m = t.getAttribute('data-id') === id;
+      t.classList.toggle('active', m && !!id);
+      t.classList.toggle('dim', !!id && !m);
+    });
+    cards.forEach(function(c){
+      var m = c.getAttribute('data-id') === id;
+      c.classList.toggle('active', m && !!id);
+      c.classList.toggle('dim', !!id && !m);
+    });
+    Array.prototype.slice.call(svg.querySelectorAll('path')).forEach(function(p){
+      var m = p.getAttribute('data-id') === id;
+      p.classList.toggle('active', m && !!id);
+      p.classList.toggle('dim', !!id && !m);
+    });
+  }
+
+  toks.concat(cards).forEach(function(el){
+    el.addEventListener('mouseenter', function(){ setActive(el.getAttribute('data-id')); });
+    el.addEventListener('mouseleave', function(){ setActive(null); });
+  });
+
+  draw();
+  window.addEventListener('resize', draw);
+  document.fonts && document.fonts.ready && document.fonts.ready.then(draw);
+})();
+</script>
+</body>
+</html>

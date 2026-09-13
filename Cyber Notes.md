@@ -99,8 +99,8 @@ This conclusion is based on direct evidence, not just the alert names. The Evide
 <!-- Walk through your process in order. What did you look at first? What led you to each pivot? -->
 
 1.  The attack story - looking the tree process was easy to look at and understand
-2.  The alerts told the how the attack story happen 
-3. Opening up the investigate tab
+2.  The alerts told on how the attack story occurred  
+3.  Opening up the investigate tab
 
 ### Queries Used
 
@@ -161,6 +161,13 @@ SecurityAlert
 
 <!-- What would you do differently? Where did you go wrong or take a longer path than needed?
      This is the most valuable part of the write-up for your own growth and for anyone reading your portfolio. -->
+     
+ - looking at the process graph too long
+ - could've done more deep diving on the logs
+ - only looked the logs as a quick brief
+ - looking at the investigation  page for too long 
+ - used AI for too long to conclude investigation - more practice and reps on investigating incidents quick and use AI when the incident is too confusing to recognize 
+ - Didnt use much KQL command much - manually browsing the alerts 
 
 ---
 

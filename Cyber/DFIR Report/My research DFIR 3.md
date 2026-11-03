@@ -105,3 +105,4 @@ OfficeActivity
 ```| where ClientIP in (badIps) or SessionID == "008dc8fa-0f13-0d4c-48fa-205d73e4c573"
 
 
+

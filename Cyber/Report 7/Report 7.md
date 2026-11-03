@@ -1,0 +1,141 @@
+# 🔍 Alert Investigation Report
+
+> **Platform:** SOC Simulation Project — WDLabs  
+> **Environment:** Microsoft Defender for Endpoint / Microsoft Sentinel
+
+---
+
+## 📋 Case Details
+
+| Field                 | Value                                                                                                                     |
+| --------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| **Alert Name**        | Possible use of a stolen session cookie                                                                                   |
+| **Alert ID / Link**   | https://security.microsoft.com/alerts/ra59c92d50-6d22-48ea-832e-feaec52188ad_aml?tid=567ea528-4e82-40fa-914e-38c05fd69677 |
+| **Analyst**           | Carl Samson                                                                                                               |
+| **Date Investigated** | 7/10/26                                                                                                                   |
+| **Severity**          | High                                                                                                                      |
+
+---
+
+## 1. Alert Summary
+
+- **Host / Account affected:**    kenneth.baker@wdlabs.com.au
+- **Date & Time of alert:** 10/03/2026 03:22:22
+- **What triggered the alert:** Lateral Movement, Credential Access, Defense Evasion, Privilege Escalation, Persistence, Initial Access rules.
+- **Why it triggered (rule/logic):** Inconsistent user-agent, network, or location attributes.
+
+---
+
+## 2. Investigation Findings
+
+### What happened?
+<!-- How was the activity executed or triggered? Walk through the technical detail. -->
+
+An active user on Kennth baker  session was observed across various environments, but the user-agent, network, and location attributes were inconsistent. This anomaly suggests unauthorized session reuse, which warrants investigation for potential account compromise.
+
+On Kennth baker account - there was 56 alerts shown that are either 
+Email messages containing malicious URL removed after delivery, 
+Unfamiliar sign-in properties​,Possible use of a stolen session cookie, Email messages from a campaign removed after delivery​ and Possible use of a stolen session cookie.
+
+On the alert's idenfiy IP address  45.91.20.57 is vpn consumer milan italy that used to perforn a ossible use of a stolen session cookie attack. 
+
+This alert is also connected to alert Authentication from password-spraying infrastructure on the 3 Oct 2026 13:20. 
+
+
+
+### Evidence
+<!-- What artefacts, log entries, or indicators support your conclusion? -->
+
+  
+kenneth.baker has 56 alerts associated that have 6 different alert titles shown on this screenshot from 17 Sep 2026 00:30:38 -   4 Oct 2026 12:21:24. 
+
+![[Pasted image 20261007132908.png]]
+
+
+![[Pasted image 20261007135158.png]]
+
+![[Pasted image 20261007135213.png]]
+
+![[Pasted image 20261007135242.png]]
+
+![[Pasted image 20261007135301.png]]
+
+![[Pasted image 20261007153144.png]]
+
+### Was the activity successful?
+- [ ] Yes
+- [ ] No
+- [x] Unknown
+
+### Verdict
+- [ ] **Malicious**
+- [ ] **Non-malicious**
+- [x] **Suspicious — requires further investigation**
+
+**Justification:**
+<!-- Why did you reach this conclusion? Be specific. -->
+
+---
+
+## 3. Investigation Steps
+
+<!-- Walk through your process in order. What did you look at first? What led you to each pivot? -->
+
+1. 
+2. 
+3. 
+
+### Queries Used
+
+```kql
+// Paste queries here
+
+AlertEvidence
+| where AccountUpn =~ "kenneth.baker@wdlabs.com.au"
+| project Timestamp, AlertId, Title, AccountName, EmailSubject
+| order by Timestamp asc
+
+
+```
+
+
+
+---
+
+## 4. Categorisation
+
+- [ ] ✅ **True Positive** — malicious activity confirmed
+- [ ] ⚠️ **Benign True Positive** — alert fired correctly, activity is legitimate
+- [ ] ❌ **False Positive** — alert fired incorrectly, rule needs review
+
+---
+
+## 5. Recommended Actions
+
+**Escalation:**
+- [ ] Urgent — phone call required
+- [ ] Non-urgent — email sufficient
+- [ ] No escalation required
+
+**Containment / Next Steps:**
+<!-- What should happen next? Free text — don't limit yourself to a checklist. -->
+
+**Alert Tuning:**
+- [ ] Tune recommended —
+- [ ] No tuning required
+
+---
+
+## 6. Lessons Learned
+
+<!-- What would you do differently? Where did you go wrong or take a longer path than needed?
+     This is the most valuable part of the write-up for your own growth and for anyone reading your portfolio. -->
+
+---
+
+<details>
+<summary>📚 About this template</summary>
+
+This investigation template is from the **[SOC Simulation Project](https://www.skool.com/socsim/about)** by WDLabs / WebDefend Cyber Security — a hands-on training environment giving aspiring analysts access to Microsoft Defender for Endpoint and Microsoft Sentinel to investigate real alerts generated by emulated threat actor TTPs.
+
+</details>

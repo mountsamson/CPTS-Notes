@@ -8,49 +8,20 @@
         "type": "tabs",
         "children": [
           {
-            "id": "feef3136c240f53f",
+            "id": "c2623fad733f532d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Penetration Testing Process.md",
+                "file": "Cyber/DFIR Report/My research DFIR 3.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Penetration Testing Process"
-            }
-          },
-          {
-            "id": "ec61cd0b04711af8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "C++/C++ notes.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "C++ notes"
-            }
-          },
-          {
-            "id": "b793659191bba9ff",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Cyber/Report 2/Alert 2.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Alert 2"
+              "title": "My research DFIR 3"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -84,7 +55,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "SSH",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -211,7 +182,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -225,53 +197,54 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "b793659191bba9ff",
+  "active": "c2623fad733f532d",
   "lastOpenFiles": [
+    "query_data (4).csv",
+    "Pasted image 20261018211426.png",
+    "Pasted image 20261018210253.png",
+    "Pasted image 20261018205732.png",
+    "Pasted image 20261018204411.png",
+    "Cyber/DFIR Report/BEC Report 1 notes.md",
+    "Cyber/DFIR Report/My research DFIR 3.md",
+    "Cyber/Report 7/Report 7.md",
+    "Pasted image 20261007153144.png",
+    "Pasted image 20261007153134.png",
+    "Pasted image 20261007135301.png",
+    "Pasted image 20261007135242.png",
+    "Pasted image 20261007135213.png",
+    "Pasted image 20261007135158.png",
+    "Cyber/Report 3/Report 3.md",
+    "Cyber/Report 5/Alert 5.md",
+    "Cyber/TEMPLATE.md",
+    "Cyber/Report 6/Alert 6.md",
+    "Cyber/Report 7",
+    "Cyber/Report 4/Report 4.md",
+    "Cyber/Report 6",
+    "Cyber/DFIR Report",
+    "Cyber/Report 5/Notes.md",
     "Cyber/Penetration Testing Process.md",
-    "Cyber/Report 1/Pasted image 20260913204806.png",
+    "Cyber/Report 5",
+    "Cyber/Report 4/TEMPLATE.md",
+    "Cyber/Report 4/SOC process questions.md",
+    "Cyber/Report 4/sandcat-kill-chain.md",
+    "Cyber/Report 4/Investigation Notes - Suspicious DPAPI Activity.md",
+    "Cyber/Report 2/Alert 2.md",
+    "Cyber/Report 4",
+    "Cyber/Report 2/commands used.md",
+    "Cyber/Report 1/Report 1.md",
+    "Cyber/Report 1/my program carlOS.md",
+    "Cyber/Report 3/Process.md",
+    "Cyber/Report 3/Case notes.md",
+    "C++/C++ notes.md",
+    "Cyber/Report 3",
     "Cyber/Report 2/notes.md",
     "Cyber/Report 2/notes 1.md",
-    "Cyber/Report 2/commands used.md",
     "Cyber/Report 2/TEMPLATE.md",
-    "Cyber/Report 2/Pasted image 20260915150530.png",
-    "Cyber/Report 2/Pasted image 20260915144911.png",
-    "Cyber/Report 2/Pasted image 20260915131159.png",
-    "Cyber/Report 2/Pasted image 20260915130648.png",
-    "Cyber/Report 2/Pasted image 20260915124916.png",
-    "Cyber/Report 2/Pasted image 20260915124655.png",
-    "Cyber/Report 2/Pasted image 20260915124616.png",
-    "Cyber/Report 2/Pasted image 20260915124601.png",
-    "Cyber/Report 2/Pasted image 20260915124512.png",
-    "Cyber/Report 2/Alert 2.md",
     "Cyber/Report 2",
-    "Cyber/Report 1/Cyber Notes.md",
     "Cyber/Report 1",
-    "Cyber/Report 1/my program carlOS.md",
     "Cyber",
-    "C++/C++ notes.md",
     "song_add_artist_annotated.html",
-    "C++",
     "_Tools/Nmap.md",
-    "_Glossary/CVSS.md",
-    "02-Vuln-Assessment/VA-Overview.md",
-    "docs/ensureFile.md",
-    "docs",
-    "01-Recon/Infrastructure/Netcat.md",
-    "01-Recon/Infrastructure/NetCat.md",
-    "01-Recon/Infrastructure/Linux-Remote-Management.md",
-    "01-Recon/Infrastructure/DNS-Enumeration.md",
-    "app/README.md",
-    "app/release/builder-debug.yml",
-    "app/release/mac-arm64/Pentest Vault.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/zh_TW_NEUTER.lproj/locale.pak",
-    "app/release/mac-arm64/Pentest Vault.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/zh_TW_MASCULINE.lproj/locale.pak",
-    "app/release/mac-arm64/Pentest Vault.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/zh_TW_FEMININE.lproj/locale.pak",
-    "app/node_modules/tsx/node_modules/@esbuild/darwin-arm64/README.md",
-    "app/node_modules/tsx/node_modules/esbuild/LICENSE.md",
-    "app/node_modules/tsx/node_modules/esbuild/README.md",
-    "app/node_modules/tsx/README.md",
-    "app/node_modules/@types/d3-geo/README.md",
-    "app/node_modules/@types/topojson-client/README.md",
-    "app/node_modules/@types/topojson-specification/README.md",
     "Untitled 1.canvas",
     "Untitled.canvas",
     "Untitled 4.canvas",

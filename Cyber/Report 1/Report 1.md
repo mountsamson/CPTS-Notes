@@ -7,13 +7,13 @@
 
 ## 📋 Case Details
 
-| Field                 | Value                                                                                               |
-| --------------------- | --------------------------------------------------------------------------------------------------- |
-| **Alert Name**        | Hands-on keyboard attack was launched from a compromised account (attack disruption)                |
-| **Alert ID / Link**   | 152 /https://security.microsoft.com/incident2/152/overview?tid=567ea528-4e82-40fa-914e-38c05fd69677 |
-| **Analyst**           | Carl                                                                                                |
-| **Date Investigated** | 8:09PM AEST 13/09/2026                                                                              |
-| **Severity**          | High                                                                                                |
+| Field                 | Value                                                                                                |
+| --------------------- | ---------------------------------------------------------------------------------------------------- |
+| **Alert Name**        | Hands-on keyboard attack was launched from a compromised account (attack disruption)                 |
+| **Alert ID / Link**   | 152 / https://security.microsoft.com/incident2/152/overview?tid=567ea528-4e82-40fa-914e-38c05fd69677 |
+| **Analyst**           | Carl                                                                                                 |
+| **Date Investigated** | 8:09PM AEST 13/09/2026                                                                               |
+| **Severity**          | High                                                                                                 |
 
 ---
 

@@ -69,3 +69,39 @@ Flagged IP addresses matches Kennth Office Activity logs
 | 2026-10-03 05:09:44 | 212.30.33.49   | [kenneth.baker@wdlabs.com.au](mailto:kenneth.baker@wdlabs.com.au) | ExchangeAdmin | Exchange   | Set-InboxRule  | (blank)                     | Rule “Delete Spam”: SubjectContainsWords=training;phishing;scam; MarkAsRead=True; StopProcessingRules=True                                                                     |
 | 2026-10-03 05:17:22 | 212.30.33.49   | [kenneth.baker@wdlabs.com.au](mailto:kenneth.baker@wdlabs.com.au) | ExchangeItem  | Exchange   | Create         | OWA, Chrome 154, Windows 10 | Subject: Re: training; Folder: \Drafts                                                                                                                                         |
 | 2026-10-03 05:17:56 | 212.30.33.49   | [kenneth.baker@wdlabs.com.au](mailto:kenneth.baker@wdlabs.com.au) | ExchangeItem  | Exchange   | Send           | OWA, ViaProxy               | Subject: Re: training; Recipients: naomi.hunter, donald.anderson, natasha.romanenko @wdlabs.com.au                                                                             |
+
+```
+let badIps = dynamic([
+    "3.106.24.201",
+    "45.91.20.57",
+    "45.91.20.8",
+    "45.91.20.10",
+    "200.162.148.32",
+    "200.162.148.39",
+    "200.162.148.102",
+    "200.162.148.120",
+    "200.162.148.121",
+    "200.162.148.165",
+    "200.162.148.197",
+    "200.162.148.238",
+    "200.162.148.246",
+    "212.30.33.5",
+    "212.30.33.10",
+    "212.30.33.16",
+    "212.30.33.21",
+    "212.30.33.25",
+    "212.30.33.27",
+    "212.30.33.38",
+    "212.30.33.44",
+    "212.30.33.47",
+    "212.30.33.49",
+    "212.30.33.162",
+    "212.30.33.233",
+    "212.30.33.236"
+]);
+OfficeActivity
+| where UserId == "kenneth.baker@wdlabs.com.au"
+| extend SessionID = tostring(parse_json(AppAccessContext).AADSessionId)
+```| where ClientIP in (badIps) or SessionID == "008dc8fa-0f13-0d4c-48fa-205d73e4c573"
+
+

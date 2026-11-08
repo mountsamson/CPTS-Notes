@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cyber/DFIR Report/My research DFIR 3.md",
+                "file": "Cyber/DFIR Report/FIR Case Playbook IoC Hunting and Master Search.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "My research DFIR 3"
+              "title": "FIR Case Playbook IoC Hunting and Master Search"
             }
           }
         ]
@@ -199,13 +199,15 @@
   },
   "active": "c2623fad733f532d",
   "lastOpenFiles": [
+    "Cyber/DFIR Report/BEC Report 1 notes.md",
+    "Cyber/DFIR Report/My research DFIR 3.md",
+    "Cyber/DFIR Report/FIR Case Playbook IoC Hunting and Master Search.md",
+    "Cyber/DFIR Report/Untitled 1.md",
     "query_data (4).csv",
     "Pasted image 20261018211426.png",
     "Pasted image 20261018210253.png",
     "Pasted image 20261018205732.png",
     "Pasted image 20261018204411.png",
-    "Cyber/DFIR Report/BEC Report 1 notes.md",
-    "Cyber/DFIR Report/My research DFIR 3.md",
     "Cyber/Report 7/Report 7.md",
     "Pasted image 20261007153144.png",
     "Pasted image 20261007153134.png",
@@ -243,8 +245,6 @@
     "Cyber/Report 2",
     "Cyber/Report 1",
     "Cyber",
-    "song_add_artist_annotated.html",
-    "_Tools/Nmap.md",
     "Untitled 1.canvas",
     "Untitled.canvas",
     "Untitled 4.canvas",
